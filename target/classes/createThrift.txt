@@ -1,0 +1,8 @@
+create keyspace jugkeyspace
+with placement_strategy = 'org.apache.cassandra.locator.SimpleStrategy'
+and strategy_options = {replication_factor:1};
+
+create column family usersJug 
+with comparator=UTF8Type 
+and default_validation_class=UTF8Type 
+and key_validation_class=UTF8Type;

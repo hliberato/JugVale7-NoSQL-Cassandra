@@ -1,0 +1,9 @@
+CREATE KEYSPACE jugkeyspace
+WITH REPLICATION={'class':'SimpleStrategy','replication_factor':1};
+
+CREATE TABLE usersJug (
+	user_key int,
+	name varchar,
+	email varchar,
+	PRIMARY KEY (user_key)
+);
